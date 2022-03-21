@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manuale', serif;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    min-width: 100vw;
+    width: 90%;
+    height: 75vh;
+    margin: auto;
+    background: url("../images/anodyne_landing.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 20px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul img{
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #EB6B57;
+    cursor: pointer;
+    font-weight: 500;
+}
+nav ul li{
+    margin-left: 1.5vw;
+}
+i.fa.fa-search{
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ------------Solution-Navbar-------------------- */
+.container{
+    background: #FFFFFF;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transform: translateY(-100%);
+    transition: all .5s ease-in-out;
+    
+}
+.container h1{
+    color: #000000;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-left: 10vw;
+}
+i.fa.fa-times{
+    position: absolute;
+    right: 2vw;
+    top: 3vh;
+    color: #000000;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+i.fa.fa-times:hover{
+    color: #c9c9c9;
+    cursor: pointer;
+}
+.rows{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+.row1 ul{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #000000;
+    border-radius: 2px;
+    padding-top: 15px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.row1 ul li a{
+    color: #000000;
+}
+.row2 ul{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #000000;
+    border-radius: 2px;
+    padding-top: 15px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.row2 ul li a{
+    color: #000000;
+}
+.Anodyne_text{
+    width: 50vw;
+    position: relative;
+    top: 44vh;
+    left: 1.5vw;
+}
+.Anodyne_text h1{
+    font-size: 4em;
+    font-weight: lighter;
+    color: white;
+    animation: left ease 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+@keyframes left {
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.headings{
+    margin-top: 15px;
+}
+.headings a{
+    color: black;
+}
+.headings h3,img{
+    display: inline-block;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+.headings h3:hover{
+    color: #EB6B57;
+    cursor: pointer;
+}
+.headings img{
+    width: 3vw;
+    vertical-align: middle;
+    margin-top: -15px;
+}
+.service-box{
+    overflow: hidden;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+.service-box h1{
+    font-size: 3em;
+    margin-left: 15px;
+    color: #EB6B57;
+    text-align: center;
+}
+.service-box ul li{ 
+    margin-left: 15px;
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: .3s ease;
+}
+.service-box ul li:hover{ 
+    background: url("../images/bi_arrow-right-short.png") no-repeat center left;
+   color: #EB6B57;
+   padding: 4px 0 4px 50px;
+   cursor: pointer;
+}
+.appear {
+    transition:0.5s;
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+  .appear.inview {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.2s;
+  }  
+  .About-box{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+  .About-box h1{
+    font-size: 3em;
+    margin-left: 15px;
+    color: #EB6B57;
+    text-align: center;
+}
+  .About-box p{
+    font-size: 1.35em;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.service1{
+    text-align: center;
+}
+.service1 h1{
+    font-size: 2em;
+}
+.service1 p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.service2{
+    text-align: center;
+}
+.service2 h1{
+    font-size: 2em;
+}
+.service2 p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
