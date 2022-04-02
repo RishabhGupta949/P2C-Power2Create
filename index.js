@@ -26,7 +26,7 @@ function opennav() {
     particles.style.zIndex = '-333';
     hidemedia1.style.display = "none";
   }
-  else{
+  else {
     particles.style.zIndex = '-333';
   }
 }
@@ -118,17 +118,17 @@ second.addEventListener('click', function () {
 function myFunction(x) {
   if (x.matches) {
     {
-    var sectionIndex = 0;
-    first.addEventListener('click', function () {
-      sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
-      inner.style.transform = 'translate(' + (sectionIndex) * -100.5 + '%)';
-    });
+      var sectionIndex = 0;
+      first.addEventListener('click', function () {
+        sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
+        inner.style.transform = 'translate(' + (sectionIndex) * -100.5 + '%)';
+      });
 
-    second.addEventListener('click', function () {
-      sectionIndex = (sectionIndex < 6) ? sectionIndex + 1 : 6;
-      inner.style.transform = 'translate(' + (sectionIndex) * -100.5 + '%)';
-    });
-  }
+      second.addEventListener('click', function () {
+        sectionIndex = (sectionIndex < 6) ? sectionIndex + 1 : 6;
+        inner.style.transform = 'translate(' + (sectionIndex) * -100.5 + '%)';
+      });
+    }
 
     menuz.addEventListener('click', function () {
       if (hidemedia.style.display == "none" && hidemedia1.style.display == "none") {
@@ -170,14 +170,14 @@ x.addListener(myFunction)
 
 // var sectionIndex = 0;
 // leftarr.addEventListener('click', function(){
-  //     sectionIndex = (sectionIndex > 0) ? sectionIndex - 1: 0;
-  //     // alert("Working!");
-  //     slider.style.transform = 'translate(' + (sectionIndex)* -33  +  '%)' ;
+//     sectionIndex = (sectionIndex > 0) ? sectionIndex - 1: 0;
+//     // alert("Working!");
+//     slider.style.transform = 'translate(' + (sectionIndex)* -33  +  '%)' ;
 // });
 
 // rightarr.addEventListener('click', function(){
-  //     sectionIndex = (sectionIndex < 13) ? sectionIndex + 1: 13;
-  //     // var checkup = "working!";
+//     sectionIndex = (sectionIndex < 13) ? sectionIndex + 1: 13;
+//     // var checkup = "working!";
 //     // console.log(checkup);
 //     slider.style.transform = 'translate(' + (sectionIndex)* -33  +  '%)' ;
 // });

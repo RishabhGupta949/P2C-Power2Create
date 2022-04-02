@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manuale', serif;
     overflow-x: hidden;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.header{
+
+.header {
     min-width: 100vw;
     width: 90%;
     height: 75vh;
@@ -18,7 +20,8 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
 }
-nav{
+
+nav {
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -29,46 +32,157 @@ nav{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
-     }
+    }
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     align-items: center;
 }
-nav ul img{
+
+nav ul img {
     cursor: pointer;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
+
+nav ul li a {
+    text-decoration: none !important;
+    color: black !important;
     font-weight: bold;
     transition: 0.3s ease;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: none;
     color: #EB6B57;
     cursor: pointer;
     font-weight: 500;
 }
-nav ul li{
+
+nav ul li {
     margin-left: 1.5vw;
 }
-i.fa.fa-search{
+
+i.fa.fa-search {
     font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
     color: white;
 }
+i.fa.fa-bars {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        flex-direction: column;
+        position: relative;
+        z-index: 888;
+    }
+
+    i.fa.fa-bars {
+        font-size: 25px;
+    }
+
+    .container {
+        transform: translateY(-150%);
+        height: 75vh;
+    }
+
+    #ulid {
+        display: none;
+        transition: 0.5s ease;
+        padding-top: 5vh;
+        padding-bottom: 1.5vh;
+        background: white;
+        width: 108%;
+    }
+
+    #ulid li {
+        text-align: center;
+    }
+
+    #ulid1 {
+        background: white;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1.0em;
+    }
+
+    #sol {
+        margin: 20px 0;
+        font-size: 2.0em;
+    }
+
+    #indus {
+        margin: 20px 0;
+        font-size: 2.0em;
+
+    }
+
+    #Digital {
+        margin: 20px 0;
+        font-size: 2.0em;
+
+    }
+
+    #Why {
+        margin: 20px 0;
+        font-size: 2.0em;
+
+    }
+
+    #Perspectives {
+        margin: 20px 0;
+        font-size: 2.0em;
+
+    }
+
+    #contact {
+        font-size: 2.0em;
+        margin-left: -15px;
+
+    }
+
+    i.fa.fa-search {
+        display: none;
+    }
+
+    i.fa.fa-bars {
+        display: block;
+    }
+
+    #nav2 {
+        padding-top: 0px;
+        margin-top: -15px;
+        font-size: 30px;
+    }
+}
+
 
 /* ------------Solution-Navbar-------------------- */
-.containerA{
+.containerA {
     background: #FFFFFF;
     width: 100vw;
     height: 50vh;
@@ -80,15 +194,17 @@ i.fa.fa-search{
     z-index: 999;
     transform: translateY(-100%);
     transition: all .5s ease-in-out;
-    
+
 }
-.containerA h1{
+
+.containerA h1 {
     color: #000000;
     font-size: 2.5em;
     margin-top: 20px;
     margin-left: 10vw;
 }
-i.fa.fa-times{
+
+i.fa.fa-times {
     position: absolute;
     right: 2vw;
     top: 3vh;
@@ -96,16 +212,19 @@ i.fa.fa-times{
     font-size: 30px;
     transition: 0.5s ease-in-out;
 }
-i.fa.fa-times:hover{
+
+i.fa.fa-times:hover {
     color: #c9c9c9;
     cursor: pointer;
 }
-.rows{
+
+.rows {
     display: flex;
     flex-direction: row;
     margin-left: 5vw;
 }
-.row1 ul{
+
+.row1 ul {
     display: flex;
     flex-direction: column;
     border-top: 2px solid #000000;
@@ -114,10 +233,12 @@ i.fa.fa-times:hover{
     margin-top: 45px;
     margin-left: 20px;
 }
-.row1 ul li a{
+
+.row1 ul li a {
     color: #000000;
 }
-.row2 ul{
+
+.row2 ul {
     display: flex;
     flex-direction: column;
     border-top: 2px solid #000000;
@@ -126,16 +247,19 @@ i.fa.fa-times:hover{
     margin-top: 45px;
     margin-left: 20px;
 }
-.row2 ul li a{
+
+.row2 ul li a {
     color: #000000;
 }
-.Anodyne_text{
+
+.Anodyne_text {
     width: 50vw;
     position: relative;
     top: 44vh;
     left: 1.5vw;
 }
-.Anodyne_text h1{
+
+.Anodyne_text h1 {
     font-size: 4em;
     font-weight: lighter;
     color: white;
@@ -143,42 +267,51 @@ i.fa.fa-times:hover{
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
+
 @keyframes left {
-    0%{
+    0% {
         transform: translateX(-50px);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-.headings{
+
+.headings {
     margin-top: 15px;
 }
-.headings a{
+
+.headings a {
     color: black;
 }
-.headings h3{
+
+.headings h3 {
     display: inline-block;
     margin-left: 15px;
     transition: 0.3s ease;
 }
-.headings h3:hover{
+
+.headings h3:hover {
     color: #EB6B57;
     cursor: pointer;
 }
-.headings img{
+
+.headings img {
     width: 3vw;
     vertical-align: middle;
     margin-top: -5.5vh;
 }
-.service-box{
+
+.service-box {
     overflow: hidden;
     height: 10vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
 }
-.service-box h1{
+
+.service-box h1 {
     font-size: 3em;
     margin-left: 15px;
     color: #EB6B57;
@@ -208,42 +341,76 @@ i.fa.fa-times:hover{
     transform: none;
     transition-delay: 0.2s;
   }   */
-  .About-box{
+.About-box {
     height: 25vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
-  }
-  .About-box h1{
+}
+
+.About-box h1 {
     font-size: 3em;
     margin-left: 15px;
     color: #EB6B57;
     text-align: center;
 }
-  .About-box p{
+
+.About-box p {
     font-size: 1.35em;
     font-weight: 400;
     margin-left: 15px;
 }
-.service1{
+
+.service1 {
     text-align: center;
 }
-.service1 h1{
+
+.service1 h1 {
     font-size: 2em;
 }
-.service1 p{
+
+.service1 p {
     font-size: 1.2em;
     font-weight: 400;
     margin-bottom: 15px;
 }
-.service2{
+
+.service2 {
     text-align: center;
 }
-.service2 h1{
+
+.service2 h1 {
     font-size: 2em;
 }
-.service2 p{
+
+.service2 p {
     font-size: 1.2em;
     font-weight: 400;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width:800px) {
+    .Anodyne_text h1 {
+        font-size: 3em;
+    }
+    .headings h3 {
+        font-size: 1.2em;
+    }
+    .headings img {
+        width: 4vw;
+        vertical-align: middle;
+        margin-top: -4.5vh;
+    }
+    .service-box h1 {
+        font-size: 2em;
+    }
+    .About-box h1 {
+        font-size: 2.5em;
+       overflow-y: hidden; 
+       margin-top: 10px;
+       padding-bottom: 20px;
+    }
+    .About-box p {
+        padding: 10px 0;
+    }
 }

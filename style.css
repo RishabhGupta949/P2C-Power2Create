@@ -42,7 +42,7 @@ nav {
     }
 }
 
-nav ul{
+nav ul {
     display: flex;
     list-style: none;
     align-items: center;
@@ -156,20 +156,25 @@ i.fa.fa-bars {
 }
 
 @media only screen and (max-width:800px) {
-    body{
+    body {
         overflow-x: hidden;
     }
+
     nav {
         flex-direction: column;
         position: relative;
-    z-index: 888;
+        z-index: 888;
     }
-    i.fa.fa-bars{
+
+    i.fa.fa-bars {
         font-size: 25px;
     }
-    .container{
+
+    .container {
         transform: translateY(-150%);
+        height: 75vh;
     }
+
     #ulid {
         display: none;
         transition: 0.5s ease;
@@ -235,7 +240,8 @@ i.fa.fa-bars {
     i.fa.fa-bars {
         display: block;
     }
-    #nav2{
+
+    #nav2 {
         padding-top: 0px;
         margin-top: -15px;
         font-size: 30px;
@@ -414,38 +420,66 @@ iframe {
 }
 
 @media (max-width:800px) {
-    .text h1{
+    .text h1 {
         font-size: 45px;
     }
-    .img-hover{
-        bottom: 30vh;   
-       }
-       .text h3{
-           bottom: 32vh;
-           font-size: 22px;
-       }
+
+    .img-hover {
+        bottom: 30vh;
+    }
+
+    .text h3 {
+        bottom: 32vh;
+        font-size: 22px;
+    }
 }
 
 @media (max-width:550px) {
-    .text h1{
+    .text h1 {
         font-size: 35px;
     }
-    .img-hover{
-        bottom: 30vh;   
-       }
-       .text h3{
-           bottom: 32vh;
-           line-height: 20px;
-           font-size: 18px;
-       }
-       nav img{
+
+    .img-hover {
+        bottom: 30vh;
+        left: 42%;
+    }
+
+    .text h3 {
+        bottom: 32vh;
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    nav img {
         height: 8vh;
         width: 50vw;
     }
 }
 
+@media only screen and (max-width:350px) {
+    nav img {
+        height: 8vh;
+        width: 60vw;
+    }
+}
+@media (min-height:700px) {
+    .img-hover {
+        bottom: 35vh;
+        left: 40%;
+    }
+    .text h1 {
+        line-height: 35px;
+    }
+}
 
-
+@media (min-height:800px) {
+    .img-hover {
+        bottom: 40vh;
+    }
+    .text h3 {
+        bottom: 30vh;
+    }
+}
 /* ---------Cards---Section----------------- */
 .cards {
     display: flex;
@@ -710,45 +744,52 @@ i.fa.fa-arrow-circle-right:hover {
 
 
 @media (max-width:800px) {
-    .card1{
+    .card1 {
         padding: 0;
     }
+
     .wrapper-1 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
+
     .wrapper-2 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
+
     .wrapper-3 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
-    .wrapper-4{
+
+    .wrapper-4 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
-    .wrapper-5{
+
+    .wrapper-5 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
-    .wrapper-6{
+
+    .wrapper-6 {
         height: 45vh;
         width: 100vw;
         margin: auto;
         transition: 0.3s ease-in-out;
     }
+
     .card1 img {
         width: 5vw;
         left: 85vw;
@@ -871,22 +912,24 @@ p#right-view {
 }
 
 @media only screen and (max-width:800px) {
-.left-side h1 {
-    font-weight: 600;
-    font-size: 2em;
-    margin-bottom: 0.5vw;
-}
-.left-side p {
-    margin-bottom: 1.5vw;
-}
-.left-side a {
-    font-size: 0.6em;
-    border: 1px solid white;
-    font-weight: 500;
-    color: white;
-    width: 9vw;
-    padding: 5px;
-}
+    .left-side h1 {
+        font-weight: 600;
+        font-size: 2em;
+        margin-bottom: 0.5vw;
+    }
+
+    .left-side p {
+        margin-bottom: 1.5vw;
+    }
+
+    .left-side a {
+        font-size: 0.6em;
+        border: 1px solid white;
+        font-weight: 500;
+        color: white;
+        width: 9vw;
+        padding: 5px;
+    }
 }
 
 @media only screen and (max-width:550px) {
@@ -895,10 +938,12 @@ p#right-view {
         font-size: 3em;
         margin-bottom: 1.5vw;
     }
+
     .left-side p {
         font-size: 1.0em;
         margin-bottom: 1.5vw;
     }
+
     .left-side a {
         font-size: 1.0em;
         border: 2px solid white;
@@ -907,10 +952,12 @@ p#right-view {
         width: 20vw;
         padding: 10px;
     }
+
     p#case {
         opacity: 0;
     }
-    .case-studies-2{
+
+    .case-studies-2 {
         opacity: 0;
     }
 }
