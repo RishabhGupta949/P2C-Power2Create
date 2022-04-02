@@ -68,7 +68,7 @@ i.fa.fa-search{
 }
 
 /* ------------Solution-Navbar-------------------- */
-.container{
+.containerA{
     background: #FFFFFF;
     width: 100vw;
     height: 50vh;
@@ -82,7 +82,7 @@ i.fa.fa-search{
     transition: all .5s ease-in-out;
     
 }
-.container h1{
+.containerA h1{
     color: #000000;
     font-size: 2.5em;
     margin-top: 20px;
@@ -157,7 +157,7 @@ i.fa.fa-times:hover{
 .headings a{
     color: black;
 }
-.headings h3,img{
+.headings h3{
     display: inline-block;
     margin-left: 15px;
     transition: 0.3s ease;
@@ -169,11 +169,11 @@ i.fa.fa-times:hover{
 .headings img{
     width: 3vw;
     vertical-align: middle;
-    margin-top: -15px;
+    margin-top: -5.5vh;
 }
 .service-box{
     overflow: hidden;
-    height: 25vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
@@ -184,7 +184,8 @@ i.fa.fa-times:hover{
     color: #EB6B57;
     text-align: center;
 }
-.service-box ul li{ 
+
+/* .service-box ul li{ 
     margin-left: 15px;
     list-style: none;
     font-weight: 600;
@@ -196,8 +197,8 @@ i.fa.fa-times:hover{
    color: #EB6B57;
    padding: 4px 0 4px 50px;
    cursor: pointer;
-}
-.appear {
+} */
+/* .appear {
     transition:0.5s;
     opacity: 0;
     transform: translateX(-120px);
@@ -206,7 +207,7 @@ i.fa.fa-times:hover{
     opacity: 1;
     transform: none;
     transition-delay: 0.2s;
-  }  
+  }   */
   .About-box{
     height: 25vh;
     display: flex;

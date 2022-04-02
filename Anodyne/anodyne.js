@@ -32,57 +32,57 @@ function closenav(){
 }
 
 // Appear View of Services
-const appear = document.querySelector('ul.appear'); 
-const callback = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-    }else{
-      entry.target.classList.remove('inview');
-    }
-  });
-}
-const io = new IntersectionObserver(callback);
-io.observe(appear);
+// const appear = document.querySelector('ul.appear'); 
+// const callback = function(entries){
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting){
+//       entry.target.classList.add('inview');
+//     }else{
+//       entry.target.classList.remove('inview');
+//     }
+//   });
+// }
+// const io = new IntersectionObserver(callback);
+// io.observe(appear);
 
-const appear1 = document.querySelector('.About-box.appear'); 
-const callback1 = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-    }else{
-      entry.target.classList.remove('inview');
-    }
-  });
-}
-const ia = new IntersectionObserver(callback1);
-ia.observe(appear1);
+// const appear1 = document.querySelector('.About-box.appear'); 
+// const callback1 = function(entries){
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting){
+//       entry.target.classList.add('inview');
+//     }else{
+//       entry.target.classList.remove('inview');
+//     }
+//   });
+// }
+// const ia = new IntersectionObserver(callback1);
+// ia.observe(appear1);
 
-const appear2 = document.querySelector('.service1.appear'); 
-const callback2 = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-    }else{
-      entry.target.classList.remove('inview');
-    }
-  });
-}
-const ib = new IntersectionObserver(callback2);
-ib.observe(appear2);
+// const appear2 = document.querySelector('.service1.appear'); 
+// const callback2 = function(entries){
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting){
+//       entry.target.classList.add('inview');
+//     }else{
+//       entry.target.classList.remove('inview');
+//     }
+//   });
+// }
+// const ib = new IntersectionObserver(callback2);
+// ib.observe(appear2);
 
-const appear3 = document.querySelector('.service2.appear'); 
-const callback3 = function(entries){
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('inview');
-    }else{
-      entry.target.classList.remove('inview');
-    }
-  });
-}
-const ic = new IntersectionObserver(callback3);
-ib.observe(appear3);
+// const appear3 = document.querySelector('.service2.appear'); 
+// const callback3 = function(entries){
+//   entries.forEach(entry => {
+//     if(entry.isIntersecting){
+//       entry.target.classList.add('inview');
+//     }else{
+//       entry.target.classList.remove('inview');
+//     }
+//   });
+// }
+// const ic = new IntersectionObserver(callback3);
+// ib.observe(appear3);
 
 const btn1  = document.getElementById(btn1);
 const p1 = document.getElementById(col1);
@@ -96,3 +96,9 @@ btn1.addEventListener('click', ()=>{
 //     p1.style.display = "none";
 // }
 });
+
+
+
+$('.carousel').carousel({
+  pause: "hover"
+})
