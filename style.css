@@ -387,7 +387,7 @@ iframe {
     background-size: contain;
     transition: 0.3s ease-out;
     position: absolute;
-    left: 45vw;
+    left: 46vw;
     bottom: 40vh;
     z-index: 000;
     transition: 0.5s ease;
@@ -425,16 +425,20 @@ iframe {
     }
 
     .img-hover {
-        bottom: 30vh;
+        bottom: 33vh;
+        left: 43vw;
+        height: 60px;
+        width: 60px;
     }
 
     .text h3 {
         bottom: 32vh;
         font-size: 22px;
+        line-height: 20px;
     }
 }
 
-@media (max-width:550px) {
+@media (max-width:550px) and (min-height:700px) {
     .text h1 {
         font-size: 35px;
     }
@@ -455,14 +459,29 @@ iframe {
         width: 50vw;
     }
 }
+@media (max-width:550px) and (min-height:800px) {
+    .text h3 {
+        bottom: 18vh;
+        line-height: 26px;
+        font-size: 28px;
+    }
+}
 
 @media only screen and (max-width:350px) {
     nav img {
         height: 8vh;
         width: 60vw;
     }
+    .text h3 {
+        bottom: 32vh;
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
 }
-@media (min-height:700px) {
+/* @media (min-height:700px) {
     .img-hover {
         bottom: 35vh;
         left: 40%;
@@ -470,16 +489,16 @@ iframe {
     .text h1 {
         line-height: 35px;
     }
-}
+} */
 
-@media (min-height:800px) {
+/* @media (max-height:570px) and (min-height:700px) {
     .img-hover {
-        bottom: 40vh;
-    }
-    .text h3 {
         bottom: 30vh;
     }
-}
+    .text h3 {
+        bottom: 21vh;
+    }
+} */
 /* ---------Cards---Section----------------- */
 .cards {
     display: flex;

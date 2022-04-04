@@ -15,7 +15,7 @@ html {
     width: 90%;
     height: 75vh;
     margin: auto;
-    background: url("../images/anodyne_landing.png");
+    background: url("../images/h20_landing.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,9 +111,10 @@ i.fa.fa-bars {
         display: none;
         transition: 0.5s ease;
         padding-top: 5vh;
-        padding-bottom: 1.5vh;
+        padding-bottom: 0vh;
         background: white;
         width: 108%;
+        margin: 0;
     }
 
     #ulid li {
@@ -175,7 +176,9 @@ i.fa.fa-bars {
 
     #nav2 {
         padding-top: 0px;
-        margin-top: -15px;
+        text-align: center;
+        width: 120%;
+        margin-top: -1px;
         font-size: 30px;
     }
 }
@@ -252,14 +255,13 @@ i.fa.fa-times:hover {
     color: #000000;
 }
 
-.Anodyne_text {
-    width: 50vw;
+.h20_text {
     position: relative;
     top: 44vh;
     left: 1.5vw;
 }
 
-.Anodyne_text h1 {
+.h20_text h1 {
     font-size: 4em;
     font-weight: lighter;
     color: white;
@@ -277,6 +279,7 @@ i.fa.fa-times:hover {
         transform: translateX(0);
     }
 }
+
 
 .headings {
     margin-top: 15px;
@@ -305,7 +308,7 @@ i.fa.fa-times:hover {
 
 .service-box {
     overflow: hidden;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
@@ -319,29 +322,6 @@ i.fa.fa-times:hover {
     font-weight: 800;
 }
 
-/* .service-box ul li{ 
-    margin-left: 15px;
-    list-style: none;
-    font-weight: 600;
-    font-size: 1.5rem;
-    transition: .3s ease;
-}
-.service-box ul li:hover{ 
-    background: url("../images/bi_arrow-right-short.png") no-repeat center left;
-   color: #EB6B57;
-   padding: 4px 0 4px 50px;
-   cursor: pointer;
-} */
-/* .appear {
-    transition:0.5s;
-    opacity: 0;
-    transform: translateX(-120px);
-  }
-  .appear.inview {
-    opacity: 1;
-    transform: none;
-    transition-delay: 0.2s;
-  }   */
 .About-box {
     height: 25vh;
     display: flex;
@@ -392,8 +372,15 @@ i.fa.fa-times:hover {
 }
 
 @media only screen and (max-width:800px) {
-    .Anodyne_text h1 {
-        font-size: 3em;
+    .h20_text h1 {
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+    .h20_text {
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%,-50%);
     }
     .headings h3 {
         font-size: 1.2em;
