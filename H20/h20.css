@@ -20,7 +20,14 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.nav-links{
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 15px 10px -15px #111; 
+}
 nav {
     padding-top: 5px;
     display: flex;
@@ -180,6 +187,9 @@ i.fa.fa-bars {
         width: 120%;
         margin-top: -1px;
         font-size: 30px;
+    }
+    .nav-links{
+      height: 10%;
     }
 }
 
