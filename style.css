@@ -379,7 +379,7 @@ iframe {
 
 .img-hover {
     /* margin: 50%; */
-    background: url("images/blackplay.png");
+    background: url("images/P2C_Landing/blackplay.png");
     height: 80px;
     width: 80px;
     background-position: center;
@@ -395,7 +395,7 @@ iframe {
 
 .img-hover:hover {
     /* margin: 50%; */
-    background: url("images/hoverplay.png");
+    background: url("images/P2C_Landing/hoverplay.png");
     cursor: pointer;
     height: 80px;
     width: 80px;
@@ -553,7 +553,7 @@ iframe {
 }
 
 .wrapper-1 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/anodyne.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/anodyne.png);
     /* background: black; */
     background-position: center;
     background-size: cover;
@@ -575,7 +575,7 @@ iframe {
 }
 
 .wrapper-2 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/gym.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/gym.png);
     background-position: center;
     background-size: cover;
     position: static;
@@ -596,7 +596,7 @@ iframe {
 }
 
 .wrapper-3 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/pep.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/pep.png);
     background-position: center;
     background-size: cover;
     position: static;
@@ -617,7 +617,7 @@ iframe {
 }
 
 .wrapper-4 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/nischay.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/nischay.png);
     background-position: center;
     background-size: cover;
     position: static;
@@ -638,7 +638,7 @@ iframe {
 }
 
 .wrapper-5 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/srms.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/srms.png);
     background-position: center;
     background-size: cover;
     position: static;
@@ -659,7 +659,7 @@ iframe {
 }
 
 .wrapper-6 {
-    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/srms.png);
+    background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%), url(images/P2C_Landing/pep.png);
     background-position: center;
     background-size: cover;
     position: static;
@@ -825,7 +825,7 @@ i.fa.fa-arrow-circle-right:hover {
 
 .bigcontainer {
     height: 98vh;
-    background: url("images/Group_1.png");
+    background: url("images/P2C_Landing/Group_1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

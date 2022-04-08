@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pep Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manuale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pep.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="nav-links">
+            <nav>
+                <a href="../index.html"><img src="../images/P2C_Landing/Frame 13.png"></a>
+                <i class="fa fa-bars"></i>
+                <ul id="ulid">
+                    <li>
+                        <a id="sol" onclick="opennav()">Solutions</a>
+                        <div class="containerA" id="container1">
+                            <h1>Solutions</h1>
+                            <i class="fa fa-times" onclick="closenav()"></i>
+                            <div class="rows">
+                                <div class="row1">
+                                    <ul>
+                                        <li><a href="#"> Commercial Lending and Leasing</a></li>
+                                        <li><a href="#"> Cora Collection</a></li>
+                                        <li><a href="#"> Cora Customer Support</a></li>
+                                        <li><a href="#"> Insurance Actuarial Analytics Services</a></li>
+                                        <li><a href="#"> Insurance Brokers and Agents</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Commercial Lending and Leasing</a></li>
+                                        <li><a href="#"> Cora Collection</a></li>
+                                        <li><a href="#"> Cora Customer Support</a></li>
+                                        <li><a href="#"> Insurance Actuarial Analytics Services</a></li>
+                                        <li><a href="#"> Insurance Brokers and Agents</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="indus" onclick="opennavI()">Industries</a>
+                        <div class="containerA" id="container2">
+                            <h1>Industries</h1>
+                            <i class="fa fa-times" onclick="closenav()"></i>
+                            <div class="rows">
+                                <div class="row1">
+                                    <ul>
+                                        <li><a href="#">Aerospace and Defense</a></li>
+                                        <li><a href="#"> Auto Finance</a></li>
+                                        <li><a href="#"> Automotive</a></li>
+                                        <li><a href="#"> Capital Markets</a></li>
+                                        <li><a href="#"> Chemicals</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Commercial Banking</a></li>
+                                        <li><a href="#">Consumer Banking</a></li>
+                                        <li><a href="#"> Consumer Goods</a></li>
+                                        <li><a href="#"> Energy</a></li>
+                                        <li><a href="#"> Hi-Tech</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Healthcare</a></li>
+                                        <li><a href="#">Hospitality</a></li>
+                                        <li><a href="#"> Industrial Manufacturing</a></li>
+                                        <li><a href="#"> Insurance</a></li>
+                                        <li><a href="#"> Life Sciences</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Healthcare</a></li>
+                                        <li><a href="#">Hospitality</a></li>
+                                        <li><a href="#"> Industrial Manufacturing</a></li>
+                                        <li><a href="#"> Insurance</a></li>
+                                        <li><a href="#"> Life Sciences</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="Digital" onclick="opennavD()">Digital DNA</a>
+                        <div class="containerA" id="container3">
+                            <h1>Digital DNA</h1>
+                            <i class="fa fa-times" onclick="closenav()"></i>
+                            <div class="rows">
+                                <div class="row1">
+                                    <ul>
+                                        <li><a href="#">Aerospace and Defense</a></li>
+                                        <li><a href="#"> Auto Finance</a></li>
+                                        <li><a href="#"> Automotive</a></li>
+                                        <li><a href="#"> Capital Markets</a></li>
+                                        <li><a href="#"> Chemicals</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Commercial Banking</a></li>
+                                        <li><a href="#">Consumer Banking</a></li>
+                                        <li><a href="#"> Consumer Goods</a></li>
+                                        <li><a href="#"> Energy</a></li>
+                                        <li><a href="#"> Hi-Tech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="Why" onclick="opennavW()">Why P2C</a>
+                        <div class="containerA" id="container4">
+                            <h1>Why P2C</h1>
+                            <i class="fa fa-times" onclick="closenav()"></i>
+                            <div class="rows">
+                                <div class="row1">
+                                    <ul>
+                                        <li><a href="#">Aerospace and Defense</a></li>
+                                        <li><a href="#"> Auto Finance</a></li>
+                                        <li><a href="#"> Automotive</a></li>
+                                        <li><a href="#"> Capital Markets</a></li>
+                                        <li><a href="#"> Chemicals</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Commercial Banking</a></li>
+                                        <li><a href="#">Consumer Banking</a></li>
+                                        <li><a href="#"> Consumer Goods</a></li>
+                                        <li><a href="#"> Energy</a></li>
+                                        <li><a href="#"> Hi-Tech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a id="Perspectives" onclick="opennavP()">Perspectives</a>
+                        <div class="containerA" id="container5">
+                            <h1>Perspectives</h1>
+                            <i class="fa fa-times" onclick="closenav()"></i>
+                            <div class="rows">
+                                <div class="row1">
+                                    <ul>
+                                        <li><a href="#">Aerospace and Defense</a></li>
+                                        <li><a href="#"> Auto Finance</a></li>
+                                        <li><a href="#"> Automotive</a></li>
+                                        <li><a href="#"> Capital Markets</a></li>
+                                        <li><a href="#"> Chemicals</a></li>
+                                        <li><a href="#"> Life and Annuity</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row2">
+                                    <ul>
+                                        <li><a href="#"> Commercial Banking</a></li>
+                                        <li><a href="#">Consumer Banking</a></li>
+                                        <li><a href="#"> Consumer Goods</a></li>
+                                        <li><a href="#"> Energy</a></li>
+                                        <li><a href="#"> Hi-Tech</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <nav id="nav2">
+                    <ul id="ulid1">
+                        <li><a href="#">Contact Us</a></li>
+                        <i class="fa fa-search" href="#"></i>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+        <div class="pep_text">
+            <h1>Pep Studio</h1>
+        </div>
+    </section>
+    <!-- ------##################################################################------------- -->
+
+
+
+    <!-- -------Section-Landing_Page------------ -->
+    <section class="pep_Landing">
+        <div class="headings">
+            <a href="#services">
+                <h3>Services</h3>
+            </a>
+            <a href="#about">
+                <h3>About</h3>
+            </a>
+            <a href="#hra">
+                <h3>HR Activities</h3>
+            </a>
+            <a href="#"><img src="../images/mini-logo.png" alt=""></a>
+        </div>
+        <div class="service-box">
+            <h1>Services <span style="color: black;">We Provided</span></h1>
+            <h1 style="margin-left: 5px;">Analytics</h1>
+        </div>
+        <div class="analysis_head_1">
+            <h3>Week 1 & 2 – AS-IS Analysis & Arriving at the Unmet Need and the Right Business Solution
+            </h3>
+            <p>
+                AS- IS Analysis :
+            </p>
+            <li>
+                Current state analysis of studio pep photography Venture, recent process management strategy to
+                evaluates a business's current processes to focus on an entire business of studio pep photography
+                Venture or on one or more specific processes within a studio pep photography Venture department or
+                studio pep photography Venture team.
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                Problem Statement:
+            </p>
+            <li>
+                <b> Context</b>- Information about the Photography and Videography industry or situation within which
+                the Problem exists (Under studio pep photography Venture).
+            </li>
+            <li>
+                <b>Problem statement</b>- Core user need what the studio pep photography venture wishes to satisfy
+                through
+                Video and Photography Shoot (studio pep photography Venture).
+            </li>
+            <li>
+                <b>User group</b>- Target group being targeted or not if not why? And what the reason? (studio pep
+                photography
+                Venture).
+            </li>
+            <li>
+                <b>Problem depth</b>- How deep is the problem for the defined user groups (In studio pep photography
+                Venture
+                Stand Point).
+            </li>
+            <li>
+                <b>Problem endurance</b>- Why pep Studio Photography think the problem will exist for a long term in
+                both user
+                and Pep Studio Photography Venture Services stand point.
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                Solution:
+            </p>
+            <li>
+                <b> Idea Generation/ Solution Idea</b>- Core idea to solve the problem (Steps looking into above problem
+                both internal & external. How studio pep photography solve the problem to get the target audience
+                growth).
+            </li>
+            <li>
+                <b>Solution Thesis</b>- Underlying reasons due to which the solution idea above will successfully
+                address the problem (studio pep photography Venture – both user and studio pep photography Venture stand
+                point).
+            </li>
+            <li>
+                <b>Product/Service Description</b>- Key modules to address the problem/ MVP & MVS. (studio pep
+                photography Venture MVP & MVS Need To be create to address the problem inside Ventures and for customer
+                both vice versa).
+            </li>
+            <li>
+                <b>User Journey</b>-Flow of how user will go through different modules & help studio pep photography
+                Venture More Penetration in Market).
+            </li>
+            <li>
+                <b>Value Hypothesis </b>- Likely value perception in the eyes of each user group due to which user group
+                will use the product/Service of (studio pep photography Venture will create the value proposition with
+                help of P2L Impact Private Limited).
+            </li>
+            <li>
+                <b>Why Now?</b>- Reasons why it will succeed in present social, economic, technology, regulatory or
+                geographic environment (P2L Impact Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>Validation</b>- Proof that the idea or product or service of studio pep photography (P2L Impact
+                Private Limited work with studio pep photography Venture) has worked elsewhere in India or outside.
+            </li>
+            <li>
+                <b>Vision</b>-What do studio pep photography Venture really wish or assume their product or services to
+                be good and consistent in revenue generation in the long run?
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                <b>Team Analysis Integration – Phase 1</b>
+            </p>
+            <p style="font-weight: normal;">Finalization of integration plan</p>
+        </div>
+        <div class="analysis_head_1">
+            <h3>Week 3 - Market & Competitive Landscape (P2L Impact Private Limited Will do below pointers Analysis)
+            </h3>
+            <p>
+                Addressable Market Size
+            </p>
+            <li>
+                <b> Target Group</b>- Typical profile of the TG of users who are likely to buy the studio pep
+                photography Venture services offering (P2L Impact Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>Annual Revenue per Event</b>- sales from per event in 1 year & Total Event in 1 year (P2L Impact
+                Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>Addressable Market Size calculation</b>- Maximum potential TG users X Potential ARPE. (P2L Impact
+                Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>Assumptions & Market growth drivers</b>-(P2L Impact Private Limited will do the analysis) .
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                Competitive Landscape
+            </p>
+            <li>
+                <b> Competitors</b>-Serving the customer need with a similar product/Services - Direct vs Indirect (P2L
+                Impact Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>Differentiation</b>-viz-a-viz direct competitors, offering analysis, traction. (P2L Impact Private
+                Limited will do the analysis)
+            </li>
+            <li>
+                <b>USP/ Disruption</b>- Whether the Solution will disrupt existing businesses in favor of itself or it
+                will create its own niche (P2L Impact Private Limited will do the analysis) .
+            </li>
+            <li>
+                <b>MOAT</b>-Key accomplishments which will put Pep Studio Photography Venture in a favorable or superior
+                business position compared to competitors in the long run (P2L Impact Private Limited will do the
+                analysis) .
+
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                Industry Outlook
+            </p>
+            <li>
+                <b> Industry forces </b>-Michael Porter’s 5 forces (P2L Impact Private Limited will do the analysis)
+                .Winner takes it all market or multiple players co-exist (P2L Impact Private Limited will do the
+                analysis) .
+            </li>
+            <li>
+                <b>Stakeholder behaviour </b>-What are the general habits or attitudes of your TG users, as per which
+                they consume your kind of photography and videography service?
+            </li>
+            <li>
+                <b>Change quotient</b>-How strongly Pep Studio Photography TG users need to change their above behaviour
+                to adopt your Service or new customer will come into scene? P2C Team Analysis Integration – Phase 2
+                SDK integration begins if required or App Development and integration begins if required depends on
+                analysis.
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <h3>Week 4 & 5- Business Model (P2L Impact Private Limited Will do below pointers Analysis)
+            </h3>
+            <li>
+                <b>Revenue Model/Pricing Structure</b>- identifying the key sources of revenue (for studio pep
+                photography Venture).
+            </li>
+            <li>
+                <b>Production/Service Method </b>- How will different service modules/offerings be created? (for studio
+                pep photography Venture).
+            </li>
+            <li>
+                <b>Sales/ Distribution Channel </b>-Channels to be used and method to sell through each channel (for
+                studio pep photography Venture).
+            </li>
+            <li>
+                <b>Servicing Method</b>-Channels to service the TG users and suppliers if any (for studio pep
+                photography Venture).
+            </li>
+            <li>
+                <b>Renewal Method or reach to create or chain to create</b>-How are customer chain/contracts/reach to
+                create or renewed (for studio pep photography Venture).
+            </li>
+            <li>
+                <b>Unit Economics </b>-Estimated numbers that show there is money to be made at unit level, ensuring
+                scalability (for studio pep photography Venture).
+            </li>
+            <li>
+                <b>Growth Engine</b>-How does the studio pep photography venture plan to grow? Examples given to explain
+                better (for studio pep photography Venture).
+            </li>
+            <li>
+                <b>Scalability </b>- Whether revenues can grow faster than the cost over time (for studio pep
+                photography Venture).
+            </li>
+            <li>
+                <b>Challenges in Business Model </b>-Solvable difficulties in making the business model work (for studio
+                pep photography Venture).
+            </li>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                <b>P2C Team Analysis Integration – Phase 3</b>
+            </p>
+            <p style="font-weight: normal;">Testing of SDK or Business Plan</p>
+        </div>
+        <div class="analysis_head_1">
+            <h3>Week 6 & 7- Business Plan (Financial) Operational & Product/services) (P2L Impact Private Limited Will
+                do below pointers Analysis) along with studio pep photography)</h3>
+            <p style="font-weight: normal;">Revenue Plan – Step-wise arrival at revenue</p>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                <b>Operational metrics & customer segmentation analysis</b>
+            </p>
+            <p style="font-weight: normal;">Sales cohort/ funnel analysis</p>
+            <p style="font-weight: normal;">Creating the financial model</p>
+            <p style="font-weight: normal;">Product/service development plan</p>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                <b>P2C Team Analysis Integration – Phase 4</b>
+            </p>
+            <p style="font-weight: normal;">
+                <b>Communication API or services</b>-to send push notifications to users or to inform about services to
+                customer
+            </p>
+            <p>
+                <b>Finalization of marketing plan</b>
+            </p>
+            <p>
+                <b>Traction</b>
+            </p>
+        </div>
+        <div class="analysis_head_1">
+            <p>
+                <b>P2C Team Analysis Integration – Phase 5</b>
+            </p>
+            <p style="font-weight: normal;">Hybrid payment for services in video and photography done by Studio Pep
+                Photography Venture</p>
+            <p style="font-weight: normal;">Customer CTA – Call to action to define users to use your APP or Web as in
+                Internet product or services.</p>
+        </div>
+        <div class="About-box appear">
+            <h1 id="about">About</h1>
+            <p>
+                <b>Pep Studio</b>
+                is a photography venture which covers events like marriage functions, pre-wedding shoots etc.
+            </p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<script src="pep.js"></script>
+
+</html>

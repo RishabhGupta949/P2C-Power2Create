@@ -65,8 +65,6 @@ function myFunction(x) {
   myFunction(x)
   x.addListener(myFunction)
 
-
-
-  $(document).ready(function(){
-    $('#carousel-one, #carousel-two').carousel();
-  })
+  $('.carousel').carousel({
+    pause: "hover"
+})

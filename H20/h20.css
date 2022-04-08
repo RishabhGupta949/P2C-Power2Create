@@ -15,7 +15,7 @@ html {
     width: 90%;
     height: 75vh;
     margin: auto;
-    background: url("../images/h20_landing.png");
+    background: url("../images/H20/h20_landing.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ i.fa.fa-bars {
         padding-top: 5vh;
         padding-bottom: 0vh;
         background: white;
-        width: 108%;
+        width: 120%;
         margin: 0;
     }
 
@@ -123,7 +123,7 @@ i.fa.fa-bars {
 
     #ulid1 {
         background: white;
-        width: 100%;
+        width: 120%;
         display: none;
     }
 
@@ -306,22 +306,23 @@ i.fa.fa-times:hover {
     margin-top: -5.5vh;
 }
 
-.service-box {
+.service-box-1 {
     overflow: hidden;
     /* height: 10vh; */
     display: flex;
     flex-direction: column;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-.service-box h1 {
+.service-box-1 h1 {
     font-size: 3em;
-    margin-left: 15px;
+    margin-left: 0;
     color: #EB6B57;
     text-align: center;
     font-weight: 800;
-}
 
+}
 .About-box {
     height: 25vh;
     display: flex;
@@ -401,5 +402,14 @@ i.fa.fa-times:hover {
     }
     .About-box p {
         padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carousel-caption.d-md-block p{
+        font-size: 0.5em !important;
+        letter-spacing: 0.5px;
+        font-weight: normal !important;
+        margin-bottom: 0 !important;
     }
 }
