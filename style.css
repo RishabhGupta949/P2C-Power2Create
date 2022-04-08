@@ -19,7 +19,14 @@ body {
     height: 85vh;
     margin: auto;
 }
-
+.nav-links{
+        position: fixed;
+        top: 0;
+        background: white;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0px 15px 10px -15px #111; 
+}
 nav {
     padding-top: 5px;
     display: flex;
@@ -245,6 +252,9 @@ i.fa.fa-bars {
         padding-top: 0px;
         margin-top: -15px;
         font-size: 30px;
+    }
+    .nav-links{
+        height: 10%;
     }
 }
 
