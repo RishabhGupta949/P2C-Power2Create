@@ -7,24 +7,30 @@ const containerP = document.getElementById("container5");
 const hidemedia = document.getElementById("ulid");
 const hidemedia1 = document.getElementById("ulid1");
 const menuz = document.querySelector(".fa.fa-bars");
-
+const h1tage = document.querySelector(".h20_text");
+const navsticky = document.querySelector(".nav-links");
 // alert("Working");
 
 
 function opennav() {
   containerS.style.transform = 'translateY(0%)';
+  navsticky.style.position = "static";
 }
 function opennavI() {
   containerI.style.transform = 'translateY(0%)';
+  navsticky.style.position = "static";
 }
 function opennavD() {
   containerD.style.transform = 'translateY(0%)';
+  navsticky.style.position = "static";
 }
 function opennavW() {
   containerW.style.transform = 'translateY(0%)';
+  navsticky.style.position = "static";
 }
 function opennavP() {
   containerP.style.transform = 'translateY(0%)';
+  navsticky.style.position = "static";
 }
 function closenav() {
   containerS.style.transform = 'translateY(-150%)';
@@ -32,6 +38,7 @@ function closenav() {
   containerW.style.transform = 'translateY(-150%)';
   containerP.style.transform = 'translateY(-150%)';
   containerI.style.transform = 'translateY(-150%)';
+  navsticky.style.position = "fixed";
 }
 
 
@@ -46,10 +53,12 @@ function myFunction(x) {
         if (hidemedia.style.display == "none" && hidemedia1.style.display == "none") {
           hidemedia.style.display = "block";
           hidemedia1.style.display = "block";
+          h1tage.style.zIndex = "-1";
         }
         else {
           hidemedia.style.display = "none";
           hidemedia1.style.display = "none";
+          h1tage.style.zIndex = "000";
         }
       });
   

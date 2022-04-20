@@ -186,9 +186,9 @@ i.fa.fa-bars {
         display: none;
         transition: 0.5s ease;
         padding-top: 5vh;
-        padding-bottom: 1.5vh;
+        padding-bottom: 0vh;
         background: white;
-        width: 100%;
+        width: 120%;
     }
 
     #ulid li {
@@ -197,8 +197,9 @@ i.fa.fa-bars {
 
     #ulid1 {
         background: white;
-        width: 100%;
+        width: 120%;
         display: none;
+        text-align: center;
     }
 
     nav ul li a {
@@ -250,25 +251,18 @@ i.fa.fa-bars {
 
     #nav2 {
         padding-top: 0px;
-        margin-top: -15px;
+        text-align: center;
+        width: 120%;
+        margin-top: -1px;
         font-size: 30px;
     }
-    .nav-links{
+    /* .nav-links{
         height: 10%;
-    }
+    } */
 }
 
 
 /* -------Landing_Image-CSS------------------ */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
 /* .wrapper{
     background: linear-gradient(274.32deg, rgba(0, 0, 0, 0.24) 70.03%, rgba(0, 0, 0, 0.65) 92.98%),
     url("images/bground_land.png");

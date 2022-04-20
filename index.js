@@ -142,8 +142,6 @@ function myFunction(x) {
     });
 
   }
-
-
   else {
     hidemedia.style.display = "flex";
     hidemedia1.style.display = "flex";
