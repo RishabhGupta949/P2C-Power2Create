@@ -191,7 +191,8 @@ i.fa.fa-search {
     #menucloseid{
         display: none;
         position: absolute;
-        top: 50px;
+        top: 5%;
+        right: 5%;
     }
     /* .nav-links{
         height: 10%;

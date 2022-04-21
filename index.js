@@ -17,6 +17,9 @@ const slider = document.querySelector(".slider");
 const first = document.querySelector('.fas.fa-angle-left');
 const second = document.querySelector('.fas.fa-angle-right');
 
+const menuopenid = document.getElementById("menuopenid");
+const menuclose = document.getElementById("menucloseid");
+
 // alert("Working");
 
 
@@ -134,17 +137,32 @@ function myFunction(x) {
       if (hidemedia.style.display == "none" && hidemedia1.style.display == "none") {
         hidemedia.style.display = "block";
         hidemedia1.style.display = "block";
+        menuopenid.style.display = "none";
+        menuclose.style.display = "block";
+        menuclose.style.color = "#EB6B57";
       }
       else {
         hidemedia.style.display = "none";
         hidemedia1.style.display = "none";
       }
     });
-
-  }
+  menuclose.addEventListener('click', function(){
+    if (hidemedia.style.display == "block" && hidemedia1.style.display == "block") {
+        hidemedia.style.display = "none";
+        hidemedia1.style.display = "none";
+        menuopenid.style.display = "block";
+        menuclose.style.display = "none";
+    }
+    else {
+        hidemedia.style.display = "block";
+        hidemedia1.style.display = "block";
+    }
+});
+}
   else {
     hidemedia.style.display = "flex";
     hidemedia1.style.display = "flex";
+    menuclose.style.display = "none";
   }
 }
 var x = window.matchMedia("(max-width: 800px)");

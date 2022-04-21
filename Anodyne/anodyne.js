@@ -9,7 +9,7 @@ const hidemedia = document.getElementById("ulid");
 const hidemedia1 = document.getElementById("ulid1");
 const menuz = document.querySelector(".fa.fa-bars");
 const navsticky = document.querySelector(".nav-links");
-const h1tage = document.querySelector(".anodyne_text");
+const h1tage = document.querySelector(".Anodyne_text");
 const menuopenid = document.getElementById("menuopenid");
 const menuclose = document.getElementById("menucloseid");
 // const particles = document.getElementById("particles-js");
@@ -55,20 +55,36 @@ function myFunction(x) {
                     hidemedia.style.display = "block";
                     hidemedia1.style.display = "block";
                     h1tage.style.zIndex = "-1";
+                    menuopenid.style.display = "none";
                     menuclose.style.display = "block";
+                    menuclose.style.color = "#EB6B57";
                 }
-        else {
-          hidemedia.style.display = "none";
-          hidemedia1.style.display = "none";
-          h1tage.style.zIndex = "000";
+                else {
+                    hidemedia.style.display = "none";
+                    hidemedia1.style.display = "none";
+                    h1tage.style.zIndex = "000";
+                }
+            });  
         }
-      });
-      
-    }
+        menuclose.addEventListener('click', function(){
+            if (hidemedia.style.display == "block" && hidemedia1.style.display == "block") {
+                hidemedia.style.display = "none";
+                hidemedia1.style.display = "none";
+                h1tage.style.zIndex = "000";
+                menuopenid.style.display = "block";
+                menuclose.style.display = "none";
+            }
+            else {
+                hidemedia.style.display = "block";
+                hidemedia1.style.display = "block";
+                h1tage.style.zIndex = "-1";
+            }
+        });
 }
 else {
     hidemedia.style.display = "flex";
       hidemedia1.style.display = "flex";
+      menuclose.style.display = "none";
     }
 }
   var x = window.matchMedia("(max-width: 800px)");

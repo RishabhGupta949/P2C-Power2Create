@@ -256,6 +256,12 @@ i.fa.fa-bars {
         margin-top: -1px;
         font-size: 30px;
     }
+    #menucloseid{
+        display: none;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
     /* .nav-links{
         height: 10%;
     } */
