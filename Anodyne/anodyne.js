@@ -10,6 +10,8 @@ const hidemedia1 = document.getElementById("ulid1");
 const menuz = document.querySelector(".fa.fa-bars");
 const navsticky = document.querySelector(".nav-links");
 const h1tage = document.querySelector(".anodyne_text");
+const menuopenid = document.getElementById("menuopenid");
+const menuclose = document.getElementById("menucloseid");
 // const particles = document.getElementById("particles-js");
 
 
@@ -53,6 +55,7 @@ function myFunction(x) {
                     hidemedia.style.display = "block";
                     hidemedia1.style.display = "block";
                     h1tage.style.zIndex = "-1";
+                    menuclose.style.display = "block";
                 }
         else {
           hidemedia.style.display = "none";

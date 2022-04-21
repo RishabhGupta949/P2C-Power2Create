@@ -9,13 +9,15 @@
 html {
     scroll-behavior: smooth;
 }
-
+body{
+    z-index: -111;
+}
 .header {
     min-width: 100vw;
     width: 90%;
     height: 75vh;
     margin: auto;
-    background: url("../images/Anodyne/anodyne_landing.png");
+    background: url("../images/Nischay/nischay_landing.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,6 +27,7 @@ html {
     top: 0;
     background: white;
     width: 100%;
+    /* height: auto; */
     /* z-index: 999; */
     box-shadow: 0px 15px 10px -15px #111; 
 }
@@ -84,7 +87,7 @@ i.fa.fa-search {
     cursor: pointer;
     color: rgb(0, 0, 0);
 }
-.buttons i.fa.fa-bars {
+i.fa.fa-bars {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -92,7 +95,10 @@ i.fa.fa-search {
     display: none;
     cursor: pointer;
 }
-
+#nav2{
+    position: relative;
+    z-index: -1;
+}
 
 @media only screen and (max-width:800px) {
     body {
@@ -105,11 +111,11 @@ i.fa.fa-search {
         z-index: 999;
     }
 
-    .buttons i.fa.fa-bars {
+    i.fa.fa-bars {
         font-size: 25px;
     }
 
-    .container {
+    .containerA {
         transform: translateY(-150%);
         height: 75vh;
     }
@@ -177,7 +183,7 @@ i.fa.fa-search {
         display: none;
     }
 
-    .buttons i.fa.fa-bars {
+    i.fa.fa-bars {
         display: block;
     }
 
@@ -188,13 +194,8 @@ i.fa.fa-search {
         margin-top: -1px;
         font-size: 30px;
     }
-    #menucloseid{
-        display: none;
-        position: absolute;
-        top: 50px;
-    }
     /* .nav-links{
-        height: 10%;
+      height: 10%;
     } */
 }
 
@@ -209,7 +210,7 @@ i.fa.fa-search {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 999;
+    /* z-index: 999; */
     transform: translateY(-100%);
     transition: all .5s ease-in-out;
 
@@ -270,17 +271,16 @@ i.fa.fa-times:hover {
     color: #000000;
 }
 
-.Anodyne_text {
-    width: 50vw;
+.nischay_text {
     position: relative;
     top: 44vh;
     left: 1.5vw;
 }
 
-.Anodyne_text h1 {
+.nischay_text h1 {
     font-size: 4em;
     font-weight: lighter;
-    color: white;
+    color: rgb(0, 0, 0);
     animation: left ease 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -293,149 +293,5 @@ i.fa.fa-times:hover {
 
     100% {
         transform: translateX(0);
-    }
-}
-
-.headings {
-    margin-top: 15px;
-}
-
-.headings a {
-    color: black;
-}
-
-.headings h3 {
-    display: inline-block;
-    margin-left: 15px;
-    transition: 0.3s ease;
-}
-
-.headings h3:hover {
-    color: #EB6B57;
-    cursor: pointer;
-}
-
-.headings img {
-    width: 3vw;
-    vertical-align: middle;
-    margin-top: -5.5vh;
-}
-
-.service-box {
-    overflow: hidden;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2%;
-}
-
-.service-box h1 {
-    font-size: 3em;
-    margin-left: 15px;
-    color: #EB6B57;
-    text-align: center;
-    font-weight: 800;
-}
-
-/* .service-box ul li{ 
-    margin-left: 15px;
-    list-style: none;
-    font-weight: 600;
-    font-size: 1.5rem;
-    transition: .3s ease;
-}
-.service-box ul li:hover{ 
-    background: url("../images/bi_arrow-right-short.png") no-repeat center left;
-   color: #EB6B57;
-   padding: 4px 0 4px 50px;
-   cursor: pointer;
-} */
-/* .appear {
-    transition:0.5s;
-    opacity: 0;
-    transform: translateX(-120px);
-  }
-  .appear.inview {
-    opacity: 1;
-    transform: none;
-    transition-delay: 0.2s;
-  }   */
-.About-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2%;
-}
-
-.About-box h1 {
-    font-size: 3em;
-    margin-left: 15px;
-    color: #EB6B57;
-    text-align: center;
-    font-weight: 800;
-}
-
-.About-box p {
-    font-size: 1.35em;
-    font-weight: 400;
-    margin-left: 15px;
-}
-
-.service1 {
-    text-align: center;
-}
-
-.service1 h1 {
-    font-size: 2em;
-}
-
-.service1 p {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.service2 {
-    text-align: center;
-}
-
-.service2 h1 {
-    font-size: 2em;
-}
-
-.service2 p {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-@media only screen and (max-width:800px) {
-    .Anodyne_text h1 {
-        font-size: 2.5em;
-    }
-    .Anodyne_text{
-        position: absolute;
-        top: 50vh;
-        left: 50vw;
-        transform: translate(-50%,-50%);
-    }
-    .headings h3 {
-        font-size: 1.2em;
-    }
-    .headings img {
-        width: 4vw;
-        vertical-align: middle;
-        margin-top: -4.5vh;
-    }
-    .service-box h1 {
-        font-size: 2em;
-    }
-    .About-box h1 {
-        font-size: 2.5em;
-       overflow-y: hidden; 
-       margin-top: 10px;
-       padding-bottom: 20px;
-    }
-    .About-box p {
-        padding: 10px 0;
     }
 }
