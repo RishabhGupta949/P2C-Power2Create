@@ -397,22 +397,34 @@ iframe {
     background-size: contain;
     transition: 0.3s ease-out;
     position: absolute;
-    left: 46vw;
+    left: 45vw;
     bottom: 40vh;
     z-index: 000;
     transition: 0.5s ease;
+
+    @media all and (min-width:800px) {
+        &:hover {
+            background: url("images/P2C_Landing/hoverplay.png");
+            cursor: pointer;
+            height: 80px;
+            width: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
 }
 
-.img-hover:hover {
+/* .img-hover:hover { */
     /* margin: 50%; */
-    background: url("images/P2C_Landing/hoverplay.png");
+    /* background: url("images/P2C_Landing/hoverplay.png");
     cursor: pointer;
     height: 80px;
     width: 80px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-}
+    background-size: contain; */
+/* } */
 
 @media (max-width:1170px) {
     .text h1 {
@@ -438,16 +450,26 @@ iframe {
     }
 
     .img-hover {
-        bottom: 33vh;
-        left: 43vw;
-        height: 60px;
-        width: 60px;
+       left: 45vw;
+        height: 50px;
+        width: 50px;
     }
 
+    /* .img-hover:hover {
+        height: 50px;
+        width: 50px;
+
+    } */
     .text h3 {
         bottom: 32vh;
         font-size: 22px;
         line-height: 20px;
+    }
+    #videocloseid{
+        position: absolute;
+        top: 10%;
+        display: none;
+
     }
 }
 
@@ -458,7 +480,7 @@ iframe {
 
     .img-hover {
         bottom: 30vh;
-        left: 42%;
+        /* left: 42%; */
     }
 
     .text h3 {
