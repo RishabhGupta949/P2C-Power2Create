@@ -427,3 +427,15 @@ i.fa.fa-times:hover {
         padding: 10px 0;
     }
 }
+.hiden_in_small{
+    padding: 1px 10px;
+}
+.hiden_in_small p{
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+@media  screen and (min-width:768px) {
+    .hiden_in_small{
+        display: none;
+    }
+}
